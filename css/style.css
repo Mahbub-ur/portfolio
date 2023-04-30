@@ -1,0 +1,293 @@
+:root{
+    --primary_font: 'Raleway', sans-serif;
+    --secondary_font: Arial, Helvetica, sans-serif;
+    --primary_color: #f39c12;
+    --secondary_color: #4c4c4c;
+    --tertiary_color: #ffffff;
+    --button_color: #aaaaaa;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: var(--primary_font);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+p{
+    font-family: var(--secondary_font);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+a{
+    font-family: var(--secondary_font);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+h6{
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: var(--primary_color);
+    position: relative;
+}
+h6::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 5px;
+    background-color: var(--primary_color);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    padding: 10px 0;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: -1;
+}
+header img{
+    width: 80%;
+}
+header .nav-link{
+    color: var(--tertiary_color);
+    margin-left: 1.5rem;
+    position: relative;
+}
+header .nav-link:hover,
+header .nav-link.active{
+    color: var(--primary_color);
+}
+header .nav-link.active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary_color);
+}
+header .button{
+    margin-left: 2rem;
+}
+header .button i{
+    color: var(--tertiary_color);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+header .button i:hover{
+    color: var(--primary_color);
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: end;
+    position: relative;
+    z-index: 0;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.4;
+    z-index: -1;
+}
+.banner h1{
+    color: var(--tertiary_color);
+}
+.banner .button .btn_custom{
+    color: var(--tertiary_color);
+    text-transform: uppercase;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid #ffffff;
+    margin: 5px;
+    transition: 0.3s all ease-in-out;
+}
+.banner .button .btn_custom:hover{
+    background-color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+}
+.about {
+    max-width: 100%;
+}
+.about .right {
+    display: flex;
+    justify-content: center;
+}
+.about .right h1 {
+    color: var(--secondary_color);
+}
+.about .right p{
+    color: #686767;
+    margin-bottom: 20px;
+}
+.about .right .progressbar{
+    width: 90%;
+}
+.about .right .progressbar h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.about .right .progressbar .progress{
+    position: relative;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 3rem;
+    margin-bottom: 0.6rem;
+    background-color: #ececec;
+}
+.about .right .progressbar .progress-title{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.about .right .progressbar .progress-title span{
+    display: block;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--tertiary_color);
+    top: 50%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    margin-left: -1.4rem;
+    transition: all 1s ease;
+}
+
+.about .right .progressbar .progress-title span::before,
+.about .right .progressbar .progress-title span::after {
+    content: "";
+    position: absolute;
+}
+
+.about .right .progressbar .progress-title span::before {
+    width: 2.5rem;
+    height: 1.5rem;
+    background-color: var(--primary_color);
+    top: 0;
+    left: -.3rem;
+    border-radius: .3rem;
+    z-index: -1;
+}
+
+.about .right .progressbar .progress-title span::after {
+    border-top: 0.7rem solid var(--primary_color);
+    border-left: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+    border-bottom: 0.7rem solid transparent;
+    top: 1.5rem;
+    left: 0.25rem;
+}
+
+.about .right .progressbar .progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: var(--primary_color);
+    transition: all 1s ease;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.services h1{
+    color: #000;
+}
+.service .item{
+    border: 1px solid #dddddd;
+    padding: 40px 30px 10px 30px;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+.service .item::before,
+.service .item::after{
+    content: '';
+    position: absolute;
+}
+.service .item:hover{
+    background-color: var(--primary_color);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%, 0% 100%, 0% 80%, 0% 30%);
+}
+
+.services .item:hover::before{
+    border: 2px solid var(--primary_color) !important;
+}
+.service .item .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #919190;
+    margin: auto;
+    margin-bottom: 20px;
+    transition: 0.3s all ease-in-out;
+}
+.service .item:hover .icon{
+    background-color: var(--tertiary_color);
+}
+.service .item .icon i{
+    color: var(--tertiary_color);
+    font-size: 30px;
+    transition: 0.3s all ease-in-out;
+}
+.service .item:hover .icon i{
+    color: var(--primary_color);
+}
+.service .item h3{
+    font-size: 24px;
+    color: #7a7a79;
+    margin-bottom: 20px;
+    transition: 0.3s all ease-in-out;
+}
+.service .item:hover h3{
+    color: var(--tertiary_color);
+}
+.service .item p{
+    color: #7a7a79;
+    transition: 0.3s all ease-in-out;
+}
+.service .item:hover p{
+    color: var(--tertiary_color);
+}
