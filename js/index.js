@@ -2,8 +2,12 @@ window.addEventListener("scroll", ()=> {
     let header = document.querySelector("header");
     header.classList.toggle("scroll", window.scrollY > 50);
 })
-
-// Banner Section
+let button = document.querySelector("#button");
+let search = document.querySelector("header .search")
+button.addEventListener("click", ()=>{
+    search.style.display = "block";
+})
+// Carousel Section
 $(document).ready(function(){
     $(".banner .owl-carousel").owlCarousel({
         items:1,
@@ -11,6 +15,8 @@ $(document).ready(function(){
         smartSpeed:1500,
         nav:true,
         navText:["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+        dots:false,
+        dotsEach:false,
         responsiveClass: true,
         responsive:{
             0:{
