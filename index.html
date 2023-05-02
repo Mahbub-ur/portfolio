@@ -14,6 +14,7 @@
     
     <!-- fonts Awesome CSS -->
     <link rel="stylesheet" href="css/all.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -34,28 +35,28 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about">About</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="expertise">Expertise</a>
+                    <a class="nav-link" href="#expertise">Expertise</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="skills">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="gallery">Gallery</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="story">Story</a>
+                    <a class="nav-link" href="#story">Story</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="client">Client</a>
+                    <a class="nav-link" href="#client">Client</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
                 <div class="button">
@@ -94,7 +95,7 @@
             <div class="col-md-6">
               <div class="row right">
                 <div class="col-md-10 text-center">
-                  <h1>ABOUT ME</h1>
+                  <h1 class="py-3">ABOUT ME</h1>
                   <h6></h6>
                 </div>
                 <div class="p mt-5">
@@ -156,11 +157,11 @@
       </div>
     </section>
     <!-- My Service Section -->
-    <section class="service" id="">
+    <section class="service" id="expertise">
       <div class="container">
         <div class="row services">
           <div class="col-md-6">
-            <h1>MY service</h1>
+            <h1 class="py-3">MY service</h1>
             <h6></h6>
           </div>
         </div>
@@ -213,7 +214,7 @@
           <div class="col-md-3">
             <div class="item">
               <div class="icon">
-                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-bullseye"></i>
               </div>
               <h3>creative design</h3>
               <p>Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.</p>
@@ -222,7 +223,7 @@
           <div class="col-md-3">
             <div class="item">
               <div class="icon">
-                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-display-chart-up"></i>
               </div>
               <h3>responsive theme</h3>
               <p>Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.</p>
@@ -231,7 +232,7 @@
           <div class="col-md-3">
             <div class="item">
               <div class="icon">
-                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-arrow-up-right-dots"></i>
               </div>
               <h3>seo service</h3>
               <p>Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.</p>
@@ -240,7 +241,150 @@
         </div>
       </div>
     </section>
+    <!-- My Statistic Section  -->
+    <section class="statistic py-5 my-5" id="skills">
+      <div class="container">
+        <div class="row services">
+          <div class="col-md-6">
+            <h1 class="py-3">My Statistic</h1>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="item">
+              <span class="number">4609</span>
+              <div class="icon">
+                <i class="fa-solid fa-laptop"></i>
+              </div>
+              <h3>FINISHED PROJECTS</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item">
+              <span class="number">3470</span>
+              <div class="icon">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <h3>HAPPY Client</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item">
+              <span class="number">2908</span>
+              <div class="icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <h3>AWARDS</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Work Section -->
+    <section class="work py-5 my-5" id="gallery">
+      <div class="container-fluid">
+        <div class="row services">
+          <div class="col-md-6">
+            <h1 class="py-3">My Work</h1>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="row services py-3">
+          <div class="col-md-6">
+            <ul>
+              <li class="list active" data-filter="all">All</li>
+              <li class="list" data-filter="web-design">Web Design</li>
+              <li class="list" data-filter="landing-page">Landing Pages</li>
+              <li class="list" data-filter="personal-blog">Personal Blog</li>
+            </ul>
+          </div>
+      </div>
+      <div class="row product gy-3">
+        <div class="col-md-4 item-box web-design">
+          <img src="images/work_1.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-4 item-box landing-page">
+          <img src="images/work_2.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-4 item-box personal-blog">
+          <img src="images/work_3.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-3 item-box web-design">
+          <img src="images/work_4.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-3 item-box landing-page">
+          <img src="images/work_5.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-3 item-box personal-blog">
+          <img src="images/work_6.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-3 item-box web-design">
+          <img src="images/work_7.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Recent Story Section -->
+    <section class="story py-5 my-5" id="story">
+      <div class="container">
+        <div class="row services py-3">
+          <div class="col-md-6">
+            <h1 class="py-3">RECENT STORY</h1>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col item">
+            <div class="item_left">
+              <p>06 July 2015</p>
+              <h3>Making the first post</h3>
+              <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="btn btn_custom" href="#" role="button">Learn More</a>
+            </div>
+            <div class="item_right">
+              <img src="images/story_1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col item">
+            <div class="item_left">
+              <p>06 July 2015</p>
+              <h3>Making the first post</h3>
+              <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="btn btn_custom" href="#" role="button">Learn More</a>
+            </div>
+            <div class="item_right">
+              <img src="images/story_1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Life Changing Story Section -->
+    <section class="lgstory py-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 img_bx">
+            <img src="images/image_2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6 text-center">
+            <h1 class="py-3">LIFE CHANGING STORY</h1>
+            <h6></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod our tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod our tempor incididunt ut labore et dolore magna aliqua. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere they cubilia Curae; Aliquam dignissim viverra dolor sit amet condimentum.</p>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere they cubilia Curae; Aliquam dignissim viverra dolor sit amet condimentum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JQuery CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Counter Up CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- Custome JS -->
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,3 +1,8 @@
+window.addEventListener("scroll", ()=> {
+    let header = document.querySelector("header");
+    header.classList.toggle("scroll", window.scrollY > 50);
+})
+
 let progress = document.querySelectorAll('.progress span'),
     spans = document.querySelectorAll('.progress-title span');
 
@@ -10,3 +15,21 @@ spans.forEach((span) => {
     span.style.opacity = '1';
     span.style.visibility = 'visible';
 });
+
+$(".number").counterUp({time:2000});
+
+$(document).ready(function(){
+    $('.list').click(function(){
+        const value = $(this).attr('data-filter');
+        if (value == 'all'){
+            $('.item-box').show('1000');
+        }
+        else{
+            $('.item-box').not('.'+value).hide('1000');
+            $('.item-box').filter('.'+value).show('1000');
+        }
+    })
+    $('.list').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+})
