@@ -15,6 +15,10 @@
     <!-- fonts Awesome CSS -->
     <link rel="stylesheet" href="css/all.min.css">
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -69,23 +73,33 @@
       </div>
     </header>
     <!-- Banner Section -->
-    <section class="banner">
+    <section class="banner" id="home">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 style="color: #f39c12; font-weight: 400;">awesome</h1>
-            <h1>personal template FOREVER</h1>
+        <div class="owl-carousel">
+          <div class="row">
+            <div class="col">
+              <h1 style="color: #f39c12; font-weight: 400;">awesome</h1>
+              <h1>personal template FOREVER</h1>
+              <div class="button pt-5 mt-5" style="text-align: center;">
+                <a class="btn btn_custom" href="#" role="button">get started</a>
+                <a class="btn btn_custom" href="#" role="button">my portfolio</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="button pt-5 mt-5" style="text-align: center;">
-            <a class="btn btn_custom" href="#" role="button">get started</a>
-            <a class="btn btn_custom" href="#" role="button">my portfolio</a>
+          <div class="row">
+            <div class="col">
+              <h1 style="color: #f39c12; font-weight: 400;">awesome</h1>
+              <h1>personal Web Designer</h1>
+              <div class="button pt-5 mt-5" style="text-align: center;">
+                <a class="btn btn_custom" href="#" role="button">get started</a>
+                <a class="btn btn_custom" href="#" role="button">my portfolio</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Banner Section -->
+    <!-- About Section -->
     <section class="about py-5 my-5" id="about">
       <div class="container-fluid">
         <div class="row">
@@ -196,7 +210,7 @@
           <div class="col-md-3">
             <div class="item">
               <div class="icon">
-                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-circle-nodes"></i>
               </div>
               <h3>PROGRAMMING</h3>
               <p>Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.</p>
@@ -223,7 +237,7 @@
           <div class="col-md-3">
             <div class="item">
               <div class="icon">
-                <i class="fa-solid fa-display-chart-up"></i>
+                <i class="fa-solid fa-display"></i>
               </div>
               <h3>responsive theme</h3>
               <p>Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.</p>
@@ -282,7 +296,7 @@
       </div>
     </section>
     <!-- My Work Section -->
-    <section class="work py-5 my-5" id="gallery">
+    <section class="work py-5" id="gallery">
       <div class="container-fluid">
         <div class="row services">
           <div class="col-md-6">
@@ -325,7 +339,7 @@
       </div>
     </section>
     <!-- Recent Story Section -->
-    <section class="story py-5 my-5" id="story">
+    <section class="story py-5 mb-5" id="story">
       <div class="container">
         <div class="row services py-3">
           <div class="col-md-6">
@@ -333,26 +347,37 @@
             <h6></h6>
           </div>
         </div>
-        <div class="row">
-          <div class="col item">
-            <div class="item_left">
+        <div class="row owl-carousel">
+          <div class="item">
+            <div class="col-md-8 item_left">
               <p>06 July 2015</p>
               <h3>Making the first post</h3>
               <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <a class="btn btn_custom" href="#" role="button">Learn More</a>
             </div>
-            <div class="item_right">
+            <div class="col-md-4 item_right">
               <img src="images/story_1.png" class="img-fluid" alt="">
             </div>
           </div>
-          <div class="col item">
-            <div class="item_left">
+          <div class="item">
+            <div class="col-md-4 item_right">
+              <img src="images/story_2.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-8 item_left">
               <p>06 July 2015</p>
               <h3>Making the first post</h3>
               <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <a class="btn btn_custom" href="#" role="button">Learn More</a>
             </div>
-            <div class="item_right">
+          </div>
+          <div class="item">
+            <div class="col-md-8 item_left">
+              <p>06 July 2015</p>
+              <h3>Making the first post</h3>
+              <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="btn btn_custom" href="#" role="button">Learn More</a>
+            </div>
+            <div class="col-md-4 item_right">
               <img src="images/story_1.png" class="img-fluid" alt="">
             </div>
           </div>
@@ -360,13 +385,13 @@
       </div>
     </section>
     <!-- Life Changing Story Section -->
-    <section class="lgstory py-5 my-5">
+    <section class="lgstory py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6 img_bx">
             <img src="images/image_2.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 content text-center">
             <h1 class="py-3">LIFE CHANGING STORY</h1>
             <h6></h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod our tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -376,6 +401,181 @@
         </div>
       </div>
     </section>
+    <!-- Clients Feedback Section -->
+    <section class="client py-5" id="client">
+      <div class="container">
+        <div class="row services py-3">
+          <div class="col-md-6">
+            <h1 class="py-3">CLIENTS feedback</h1>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="row owl-carousel">
+          <div class="col">
+            <div class="content_1">
+              <h3>Great product, very fast service</h3>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+            <div class="content_2">
+              <div class="img_bx">
+                <img src="images/clients_1.png" class="img-fluid" alt="">
+              </div>
+              <div class="content">
+                <h4>John Smith</h4>
+                <p>App Developer, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="content_1">
+              <h3>Great product, very fast service</h3>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+            <div class="content_2">
+              <div class="img_bx">
+                <img src="images/clients_2.png" class="img-fluid" alt="">
+              </div>
+              <div class="content">
+                <h4>John Doe</h4>
+                <p>Web Developer, Canada</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="content_1">
+              <h3>Great product, very fast service</h3>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+            <div class="content_2">
+              <div class="img_bx">
+                <img src="images/clients_1.png" class="img-fluid" alt="">
+              </div>
+              <div class="content">
+                <h4>John Smith</h4>
+                <p>App Developer, USA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest Tweet Section -->
+    <section class="tweet py-5">
+      <div class="container">
+        <div class="row services py-3">
+          <div class="col-md-6">
+            <h1 class="py-3">latest tweet</h1>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="row text-center mt-2">
+          <div class="col-md-8 m-auto">
+            <h5>RT <span>@SonyTV: </span>Do you know what's happening on Independence Day? Tune in to Piku this 15th August at 8 PM. <span>#FreeToWatchPiku http://t.co/1b2tWh...</span> Deepika Padukone</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get In Touch Section -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row services py-3">
+          <div class="col-md-6">
+            <h1 class="py-3">latest tweet</h1>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 m-auto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vita eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name :</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="col-md-6">
+            <label for="subject" class="form-label">Subject :</label>
+            <input type="text" class="form-control" id="subject">
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="col-md-6">
+            <label for="time" class="form-label">Time ( 9AM to 5PM ) :</label>
+            <input type="text" class="form-control" id="time">
+          </div>
+          <div class="col-md-12">
+            <label for="message" class="form-label">Your Message :</label>
+            <textarea name="message" id="message" rows="3" class="form-control"></textarea>
+          </div>
+          <div class="col">
+            <button type="submit" class="btn btn_custom">Make Request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Map Section -->
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58403.62426343836!2d90.32108068225175!3d23.810542906427877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c1c61277db%3A0xc7d18838730e2e59!2sMirpur%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1683022429226!5m2!1sen!2sbd" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="container map_content">
+        <div class="row">
+          <div class="content">
+            <div class="content_1">
+              <h4>Office :</h4>
+              <p>795 Folsom Ave, Suite 600 <br>
+                San Francisco, CA 94107</p>
+            </div>
+            <div class="content_2">
+              <div>
+                <h4>Phone:</h4>
+                <p>(91) 8547 632521</p>
+              </div>
+              <div>
+                <h4>Fax:</h4>
+                <p>(91) 11 4752 1433</p>
+              </div>
+              <div>
+                <h4>Email:</h4>
+                <p>info@canvas.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Follow Me Section -->
+    <section class="follow py-5">
+      <div class="container">
+        <div class="row services py-3">
+          <div class="col-md-6">
+            <h1 class="py-3">follow ME</h1>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col m-auto">
+            <p>Copyright 2015 <span>ThePunjo</span> | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- JQuery CDN Links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Bootstrap CDN -->
@@ -383,6 +583,9 @@
     <!-- Counter Up CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
 
     <!-- Custome JS -->
     <script src="js/index.js"></script>

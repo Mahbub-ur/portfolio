@@ -3,6 +3,42 @@ window.addEventListener("scroll", ()=> {
     header.classList.toggle("scroll", window.scrollY > 50);
 })
 
+// Banner Section
+$(document).ready(function(){
+    $(".banner .owl-carousel").owlCarousel({
+        items:1,
+        loop:true,
+        smartSpeed:1500,
+        nav:true,
+        navText:["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+        responsiveClass: true,
+        responsive:{
+            0:{
+                nav:false,
+            },
+            768:{
+                nav:false,
+            },
+            991:{
+                nav:true,
+            }
+        }
+    });
+    $(".story .owl-carousel").owlCarousel({
+        items:2,
+        loop:true,
+        smartSpeed:1500,
+        dotsEach:true,
+    });
+    $(".client .owl-carousel").owlCarousel({
+        items:2,
+        loop:true,
+        smartSpeed:1500,
+        margin:40,
+        dotsEach:true,
+    });
+  });
+
 let progress = document.querySelectorAll('.progress span'),
     spans = document.querySelectorAll('.progress-title span');
 
