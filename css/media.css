@@ -1,0 +1,32 @@
+@media (max-width: 1024px){
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    header .button{
+        margin-left: 1.5rem;
+    }
+    .banner .owl-nav .owl-prev i {
+        left: -4%;
+    }
+    .banner .owl-nav .owl-next i {
+        right: -4%;
+    }
+    .about .right p{
+    margin-bottom: 10px;
+    }
+    .service .item h3{
+        font-size: 18px;
+    }
+    .work ul li{
+        padding: 8px 8px;
+    }
+    .story .item .item_left h3{
+        font-size: 1.2rem;
+    }
+    .lgstory .img_bx{
+        left: -3%;
+    }
+}

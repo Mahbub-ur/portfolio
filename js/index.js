@@ -2,10 +2,21 @@ window.addEventListener("scroll", ()=> {
     let header = document.querySelector("header");
     header.classList.toggle("scroll", window.scrollY > 50);
 })
+
+let changeIcon = function(icon){
+    icon.classList.toggle('fa-xmark')
+}
+
 let button = document.querySelector("#button");
 let search = document.querySelector("header .search")
 button.addEventListener("click", ()=>{
-    search.style.display = "block";
+    if(search.style.display === "block"){
+        search.style.display = "none";
+    }else{
+        search.style.display = "block";
+    }
+    
+    
 })
 // Carousel Section
 $(document).ready(function(){

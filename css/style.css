@@ -87,6 +87,7 @@ header .nav-link{
 header .nav-link:hover,
 header .nav-link.active{
     color: var(--primary_color);
+    position: relative;
 }
 header .nav-link.active::before{
     content: '';
@@ -97,9 +98,14 @@ header .nav-link.active::before{
     height: 2px;
     background-color: var(--primary_color);
 }
-header .button{
+header .button {
     margin-left: 2rem;
     position: relative;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header .button i{
     color: var(--tertiary_color);
@@ -149,6 +155,9 @@ header .search button:hover{
 }
 header .search button i:hover{
     color: var(--tertiary_color);
+}
+.fa-magnifying-glass{
+    font-size: 1.1rem;
 }
 .banner{
     background-image: url(../images/banner.png);
@@ -374,7 +383,7 @@ header .search button i:hover{
     color: var(--primary_color);
 }
 .service .item h3{
-    font-size: 24px;
+    font-size: 20px;
     color: #7a7a79;
     margin-bottom: 20px;
     transition: 0.3s all ease-in-out;
@@ -409,8 +418,9 @@ header .search button i:hover{
     opacity: 0.7;
     z-index: -1;
 }
-.statistic h1{
+.statistic h1 {
     margin-bottom: 5px;
+    color: var(--tertiary_color);
 }
 .statistic .item{
     text-align: center;
@@ -474,12 +484,13 @@ header .search button i:hover{
     font-weight: 300;
     color: #7e7d7d;
 }
-.story .item .item_left h3{
+.story .item .item_left h3 {
     color: var(--primary_color);
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 5px;
     margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 .story .item .item_left .btn_custom{
     padding: 8px 15px;
@@ -553,7 +564,7 @@ header .search button i:hover{
 }
 .client .content_1 h3{
     color: #696868;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
