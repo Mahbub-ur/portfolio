@@ -4,9 +4,18 @@ window.addEventListener("scroll", ()=> {
 })
 
 let changeIcon = function(icon){
-    icon.classList.toggle('fa-xmark')
+    icon.classList.toggle('fa-xmark');
 }
 
+let icon = document.querySelector(".fa-bars");
+let navBar = document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function (a) {
+    a.addEventListener("click", function () {
+        navCollapse.classList.remove("show");
+        icon.classList.toggle('fa-xmark');
+    })
+})
 let button = document.querySelector("#button");
 let search = document.querySelector("header .search")
 button.addEventListener("click", ()=>{
