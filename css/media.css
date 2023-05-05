@@ -29,4 +29,129 @@
     .lgstory .img_bx{
         left: -3%;
     }
+    .statistic .item h3{
+        font-size: 18px;
+    }
+    .about .right .progressbar .progress{
+        width: 95%;
+    }
+    .about .right .progressbar .progress-title span::after{
+        left: -1.97rem;
+    }
+}
+@media (max-width: 991px){
+    .nav-item{
+        text-align: center;
+    }
+    .nav-link{
+        display: inline-block;
+    }
+    header .search{
+        bottom: -43px;
+        right: 120px;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .lgstory .img_bx{
+        top: 182px;
+        left: -9%;
+        transform: scale(1.6) !important;
+    }
+    .lgstory .content{
+        left: 0;
+    }
+    .about .right .progressbar .progress{
+        width: 94%;
+    }
+}
+@media (max-width: 767px) {
+    .about .img_bx{
+        display: none;
+    }
+    .work ul{
+        justify-content: center;
+    }
+    .work .product{
+        max-height: 280vh;
+        overflow: hidden;
+    }
+    .story .item{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .about .right .progressbar .progress{
+        width: 99%;
+    }
+}
+@media (max-width: 575px){
+    header .search{
+        right: 145px;
+    }
+    .work .product{
+        max-height: 260vh;
+    }
+    .story .item{
+        gap: 30px;
+        text-align: center;
+    }
+    .lgstory .img_bx{
+        transform: scale(1) !important;
+        left: 0;
+        top: 0;
+    }
+    .about .right .progressbar .progress{
+        width: 97%;
+    }
+}
+@media (max-width: 425px){
+    h1{
+        font-size: 1.8rem;
+    }
+    .work ul{
+        padding: 0;
+    }
+    .work .product{
+        max-height: 256vh;
+    }
+    .owl-dots{
+        left: 43%;
+    }
+    .about .right .progressbar .progress{
+        width: 92%;
+    }
+}
+@media (max-width: 425px){
+    .work .product{
+        max-height: 239vh;
+    }
+}
+@media (max-width: 375px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .lgstory h1{
+        font-size: 29px;
+    }
+    .work .product{
+        max-height: 226vh;
+    }
+    .lgstory{
+        max-height: 110vh;
+    }
+    .lgstory .content{
+        transform: translateY(-42%);
+    }
+}
+@media (max-width: 320px) {
+    
+    .banner button{
+        display: flex;
+    }
+    .banner .button .btn_custom{
+        font-size: 0.9rem;
+    }
+    .work .product{
+        max-height: 240vh;
+    }
 }

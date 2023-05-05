@@ -18,6 +18,7 @@ button.addEventListener("click", ()=>{
     
     
 })
+AOS.init();
 // Carousel Section
 $(document).ready(function(){
     $(".banner .owl-carousel").owlCarousel({
@@ -46,6 +47,18 @@ $(document).ready(function(){
         loop:true,
         smartSpeed:1500,
         dotsEach:true,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            767:{
+                items:2,
+            },
+            991:{
+                items:2,
+            }
+        }
     });
     $(".client .owl-carousel").owlCarousel({
         items:2,
@@ -53,9 +66,25 @@ $(document).ready(function(){
         smartSpeed:1500,
         margin:40,
         dotsEach:true,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            767:{
+                items:1,
+            },
+            991:{
+                items:1,
+            },
+            992:{
+                items:2,
+            }
+        }
     });
   });
 
+// Progress Bar
 let progress = document.querySelectorAll('.progress span'),
     spans = document.querySelectorAll('.progress-title span');
 
@@ -64,13 +93,16 @@ progress.forEach((prog) => {
 });
 
 spans.forEach((span) => {
-    span.style.left = span.dataset.num;
+    // span.style.left = span.dataset.num;
     span.style.opacity = '1';
     span.style.visibility = 'visible';
 });
 
+// Counter Up
 $(".number").counterUp({time:2000});
 
+
+// Gallery Section
 $(document).ready(function(){
     $('.list').click(function(){
         const value = $(this).attr('data-filter');

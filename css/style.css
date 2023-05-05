@@ -257,9 +257,9 @@ header .search button i:hover{
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-.about .right .progressbar .progress{
+.about .right .progressbar .progress {
     position: relative;
-    width: 100%;
+    width: 96%;
     height: 0.5rem;
     border-radius: 3rem;
     margin-bottom: 0.6rem;
@@ -269,17 +269,17 @@ header .search button i:hover{
     position: relative;
     margin-bottom: 1rem;
 }
-.about .right .progressbar .progress-title span{
+.about .right .progressbar .progress-title span {
     display: block;
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
     color: var(--tertiary_color);
-    top: 50%;
-    left: 0;
+    top: 100%;
+    right: -8%;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-50%);
+    transform: translateY(17%);
     margin-left: -1.4rem;
     transition: all 1s ease;
 }
@@ -291,22 +291,22 @@ header .search button i:hover{
 }
 
 .about .right .progressbar .progress-title span::before {
-    width: 3rem;
-    height: 2rem;
+    width: 3.2rem;
+    height: 2.5rem;
     background-color: var(--primary_color);
-    top: 0;
-    left: -.3rem;
+    top: -0.3rem;
+    right: -.6rem;
     border-radius: .3rem;
     z-index: -1;
 }
 
 .about .right .progressbar .progress-title span::after {
-    border-top: 0.7rem solid var(--primary_color);
+    border-top: 0.7rem solid transparent;
     border-left: 0.7rem solid transparent;
-    border-right: 0.7rem solid transparent;
+    border-right: 0.7rem solid var(--primary_color);
     border-bottom: 0.7rem solid transparent;
-    top: 1.5rem;
-    left: 0.25rem;
+    top: 0.3rem;
+    left: -2.063rem;
 }
 
 .about .right .progressbar .progress span {
@@ -456,6 +456,7 @@ header .search button i:hover{
 .work ul{
     display: flex;
     margin-bottom: 10px;
+    justify-content: center;
 }
 .work ul li{
     list-style: none;
